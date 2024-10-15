@@ -20,6 +20,6 @@ void main()
     consumo100 = ( litros / km ) * 100 ;
     preco_viagem = preco_litro * litros ;
 
-    printf("O consumo em media aos 100km e %f. O preco total da viagem foi %f euros.", consumo100, preco_viagem);
+    printf("O consumo em media aos 100km e %.1f. O preco total da viagem foi %.2f euros.", consumo100, preco_viagem);
 
 }

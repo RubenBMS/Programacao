@@ -13,7 +13,7 @@ void main()
 
     valorDollars = valorEuros * taxa ;
 
-    printf("Valor em dollars= %f.", valorDollars);
+    printf("Valor em dollars= %f.", valorDollars);  
 
 
 
