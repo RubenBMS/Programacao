@@ -5,6 +5,11 @@ void main()
     float NF;
     float T1;
     float T2;
+    
+    char aluno[100];
+
+    printf("Insira o nome do aluno: ");
+    scanf("%s", aluno);
 
     printf("Insira a nota do teste 1: ");
     scanf("%f", &T1);
@@ -14,5 +19,5 @@ void main()
 
     NF = T1 * 0.4 + T2 * 0.6 ;
 
-    printf("A nota final e %f", NF);
+    printf("A nota final do aluno %s e %f.",aluno, NF);
 }
