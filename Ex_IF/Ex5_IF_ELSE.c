@@ -15,24 +15,26 @@ void main()
     printf("Insira valor do terceiro lado: ");
     scanf("%f",&lado3);
 
-    if (lado1 > 0 && lado2 > 0 && lado3 > 0)
+    if (lado1 < lado2 + lado3 && lado2 < lado1 + lado3 && lado3 < lado1 + lado2)
     {
-        if (lado1 < lado2 + lado3)
+        if(lado1 == lado2 && lado1 == lado3)
         {
-            /* code */
+            printf("Triangulo e equilatero");
         }
         else
         {
-            printf("Triangulo Invalido");
+            if(lado1 == lado2 || lado2 == lado3 || lado3 == lado1)
+            {
+                printf("Triangulo e isosceles");
+            }
+            else
+            {
+                printf("Triangulo e escaleno");
+            }
         }
-        
     }
     else
     {
         printf("Triangulo Invalido");
-    }
-    
-
-
-
+    }          
 }
