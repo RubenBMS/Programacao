@@ -12,7 +12,7 @@ void main()
     {
         factorial = 1 ;
     }
-    else
+    else if (num >= 1)
     {
         for (int i = 1; i <= num; i++)
         {
@@ -20,7 +20,10 @@ void main()
         }
         
     }
+    else
+    {
+        printf("Numero Invalido");
+    }
     printf("O factorial de %d e %d", num, factorial);
-    
 
 }
